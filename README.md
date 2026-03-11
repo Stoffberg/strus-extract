@@ -1,6 +1,6 @@
 # strus-extract
 
-Response metadata extraction for [Strus](https://strus.dev). Walks JSON response bodies and produces structural signals (null rates, enum distributions, array cardinalities) while automatically excluding PHI/PII fields.
+Response metadata extraction for [Strus](https://strus.io). Walks JSON response bodies and produces structural signals (null rates, enum distributions, array cardinalities) while automatically excluding PHI/PII fields.
 
 This package runs inside your process. No response data leaves your server. Only the extracted signals are sent to Strus.
 
