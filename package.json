@@ -1,0 +1,45 @@
+{
+	"name": "strus-extract",
+	"version": "0.1.1",
+	"type": "module",
+	"description": "Response metadata extraction with PHI/PII filtering for Strus",
+	"license": "MIT",
+	"author": "Dirk Beukes",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Stoffberg/strus-extract.git"
+	},
+	"homepage": "https://strus.dev",
+	"bugs": {
+		"url": "https://github.com/Stoffberg/strus-extract/issues"
+	},
+	"keywords": [
+		"strus",
+		"api",
+		"monitoring",
+		"metadata",
+		"extraction",
+		"phi",
+		"pii",
+		"healthcare",
+		"hipaa"
+	],
+	"exports": {
+		".": {
+			"import": "./dist/index.mjs",
+			"types": "./dist/index.d.mts"
+		}
+	},
+	"files": ["dist"],
+	"scripts": {
+		"build": "tsdown",
+		"test": "bun test",
+		"check-types": "tsc --noEmit",
+		"prepublishOnly": "bun run build"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"tsdown": "^0.21.1",
+		"typescript": "^5"
+	}
+}
